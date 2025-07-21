@@ -12,6 +12,19 @@
   </div>
 </template>
 
+<!--go deap and undersand the slot rather than just repeat every html-->
+<!--just create component and put the slot in place and put all hard design-->
+<!--then just call the component like that-->
+<!--then just call the component like that-->
+==========================================================
+<!-- <component>
+  <template #icon>
+    <EcosystemIcon />
+  </template>
+  <template #heading>Ecosystem</template>
+  here default slot
+</component>
+-->
 <style scoped>
 .item {
   margin-top: 2rem;
@@ -84,3 +97,6 @@ h3 {
   }
 }
 </style>
+<script setup lang="ts">
+import EcosystemIcon from '@/components/icons/IconEcosystem.vue'
+</script>
