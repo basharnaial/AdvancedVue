@@ -1,5 +1,8 @@
 <script setup>
-import { counter } from '@/stores/counterStore';
+import {useCounterStore} from '@/stores/CounterStore.js';
+
+// only diffrenet i need to call this function
+let counter = useCounterStore();
 </script>
 
 <template>
@@ -7,7 +10,11 @@ import { counter } from '@/stores/counterStore';
   <div>
   <h1>{{counter.count}}</h1>
 
-    <button @click="counter.increment()">add more</button>
+    <button @click="counter.increment()"
+            :disabled="! counter.remaining"
+    >add more
+    {{ counter.remaining}}
+    </button>
 
   </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import { useFlash } from '@/composables/useFlash.js'
-import { counter } from '@/stores/counterStore';
+import { counter } from '@/stores/CounterStore.js';
 
 let { flash } =  useFlash();
 
