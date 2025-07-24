@@ -1,0 +1,27 @@
+{
+  "name": "RunGun",
+  "spots": 5,
+  "members": [
+    {
+      "name": "Bashar N",
+      "email": "basharn55@gmail.com",
+      "status": "Active"
+    },
+    {
+      "name": "Sara Alharthy",
+      "email": "sara.h@example.com",
+      "status": "Inactive"
+    },
+    {
+      "name": "Mohammed Alshehri",
+      "email": "mo.shehri@example.com",
+      "status": "Pending"
+    },
+    {
+      "name": "Lama Khalid",
+      "email": "lama.khalid@example.com",
+      "status": "Active"
+    }
+  ]
+
+}
