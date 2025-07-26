@@ -36,7 +36,7 @@ let showModal = ref(false);
     need to add new team member
       <form class="mt-6">
         <div class="flex gap-2 mb-3">
-          <input type="email" placeholder="Email" name="email" required />
+          <input type="email" placeholder="Email" name="email" required  class="flex-1" />
           <button>add</button>
         </div>
       </form>
