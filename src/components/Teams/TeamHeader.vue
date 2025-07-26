@@ -1,20 +1,15 @@
 <script setup>
 import { useTeamStore } from '@/stores/TeamStore';
+import AddMemberModal from '@/components/Teams/AddMemberModal.vue'
 let team = useTeamStore();
 </script>
 
-<template>
+ <template>
     <header class="flex justify-between">
     <div>
 
-<!--      $$ here we see emmit data from child header to parent Teamview when button clicked-->
-      <button
-        class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded disabled:bg-gray-400"
-        :disabled="! team.spotRemaining"
-        @click="$emit('add')"
-      >
-        Add Member ({{ team.spotRemaining }} Spots Left)
-      </button>
+    <AddMemberModal></AddMemberModal>
+
     </div>
     <div>
       <div class="inline-flex items-center text-3xl relative">
